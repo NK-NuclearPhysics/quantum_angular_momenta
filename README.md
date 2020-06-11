@@ -5,8 +5,7 @@ Following functions are included in the codes `quantang.py`.
 `d` in `Rd(j,m,n,t,d=0)` denotes the order-$d$ derivative. 
 
 * Spherical harmonics 
-`SHY_list(l,m,t,phi)`
-
+`SHY_list(l,m,t,phi)`,
 `l`,`m` angular momentum and its projection on $z-$axis.
 `t`,`phi` for $\theta$ and $\phi$.
 
