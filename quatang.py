@@ -1,5 +1,5 @@
 import numpy as np
-
+from math import cos, sin 
 
 ## To calculate Wignar d-matrix
 #### The corresponding function is Rd
@@ -446,21 +446,6 @@ def CGcoin(l,s,j,mj):
         print('<{0} {1}, {2} {3}|{4} {5}>={6}\n'.format(repr(l),\
               repr(Ml[i]),repr(s),repr(Sd[i]),repr(j),repr(mj),C[i]) )
     return Ml, Sd,  C
-
-
-def Tsvec(A,B):
-    ''' A --- vector of principle diagonal line A[0:n]
-        B --- vector of secondary diagonal line B[0:n-1]
-    '''
-    n = A.size
-    if(n<=1):
-        return np.array([1])
-    X = np.ones(n)
-    X[1] = -A[0]/B[0]
-    for i in range(2,n):
-        X[i]=-(B[i-2]*X[i-2]+A[i-1]*X[i-1])/B[i-1]
-    c = np.linalg.norm(X)
-    return X/c
 
 
 def Tsvec(A,B):
