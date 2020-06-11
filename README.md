@@ -2,6 +2,7 @@
 Following functions are included in the codes `quantang.py`.
 * The reduced rotational matrix 
 `Rd(j,m,n,t,d=0)` is designed to calculate the Wigner D-matrix 
+
 $$
 d_{mn}^j(\theta) = \langle j m |\exp(-i\theta J_y)| jn\rangle.
 $$
