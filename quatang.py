@@ -1,5 +1,5 @@
 import numpy as np
-from math import cos, sin 
+from math import cos, sin, sqrt
 
 ## To calculate Wignar d-matrix
 #### The corresponding function is Rd
